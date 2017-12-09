@@ -1,0 +1,31 @@
+First Try
+
+I cheated a bit, just due to reading the book, but for the most part I did
+everything by myself.
+
+Total time:
+    Friday: 30~ minutes
+    Saturday: 40~ minutes
+
+A caveat to the timing: due to working on multiple machines, and not backing
+this up previously, I started from scratch on Saturday, as opposed to continuing
+my work from Friday. That being said, I had some experience working with it on
+Friday.
+
+--
+
+- Started with string interpolation, and one big string.
+- Moved the second sentence into it's own method, to better account for the
+  different states. Hacky way, since I still use interpolation to pull in the
+  second sentence
+- Lots of ternary conditionals
+- Used the splat to make an array from the range, so I can conditionally add a
+  new line in verses
+- Song was very straight forward, once everything else worked
+
+--
+
+Looking at Sandi's answer, a few things pop out:
+
+- Using join() on verses instead of conditionally adding new lines
+- String interpolation, and ternary conditionals, are very tempting
