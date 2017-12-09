@@ -7,14 +7,7 @@ class Bottles
   end
 
   def verses(s, e)
-    result = ''
-    nums = *s.downto(e)
-    nums.each do |num|
-      result << verse(num)
-      result << "\n" unless num == nums.last
-    end
-
-    result
+    s.downto(e).map { |n| verse(n) }.join("\n")
   end
 
   def verse(num)
